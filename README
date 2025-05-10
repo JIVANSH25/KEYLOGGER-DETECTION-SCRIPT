@@ -1,0 +1,31 @@
+# 🕵️ Suspicious Process & Keylogger Detector (Python)
+
+A simple Python tool that scans for potentially malicious processes like keyloggers by comparing running process names against a list of suspicious patterns.
+
+## 🔍 Features
+
+- Detects suspicious process names commonly associated with keyloggers (e.g., "keylogger", "hook", "spy")
+- Lists flagged processes with name and PID
+- Provides basic guidance for manual keyboard hook inspection
+- Lightweight and cross-platform (works on Windows, Linux, macOS)
+
+---
+
+## ⚙️ How It Works
+
+1. Uses `psutil` to iterate over all running processes.
+2. Checks if the process name contains common keylogger terms.
+3. Optionally suggests further analysis tools for deep inspection.
+
+---
+
+## 🛠️ Installation
+
+### ✅ Requirements
+
+- Python 3.x
+- `psutil` library
+
+Install using pip:
+```bash
+pip install psutil
